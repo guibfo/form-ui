@@ -1,0 +1,134 @@
+/**
+ * Fieldset
+ */
+
+.fieldset {
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.fieldset__legend {
+  color: #194595;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/**
+ * Input Styles
+ */
+
+ .input-wrapper {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.input-wrapper > span {
+  bottom: -12px;
+  color: #ff0000;
+  font-size: 10px;
+  left: 0;
+  position: absolute;
+}
+
+.input-wrapper:hover .input-label,
+.input-wrapper.filled .input-label,
+.input-wrapper:focus-within .input-label,
+.has-error .input-label {
+  background: #fcfcfb;
+  font-size: 10px;
+  top: -5px;
+}
+
+.input-field {
+  background-color: #fcfcfb;
+  border: 1px solid #d6d6d6;
+  border-radius: 2px;
+  color: #222222;
+  font-size: 14px;
+  padding: 5px 8px;
+  width: 100%;
+}
+
+.input-label {
+  color: #d6d6d6;
+  font-size: 14px;
+  left: 5px;
+  padding: 0 3px;
+  position: absolute;
+  top: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.has-error .input-field {
+  border-color: #ff0000;
+}
+
+.has-error .input-label {
+  color: #ff0000;
+}
+
+/**
+ * Status Bar Styles
+ */
+
+.status {
+  align-items: center;
+}
+
+.status__text {
+  color: #194595;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.status__bar {
+  background-color: #b9c1d7;
+  border-radius: 5px;
+  height: 6px;
+  position: relative;
+  width: 100%;
+}
+
+.status__bar:after {
+  background-color: #194595;
+  border-radius: 5px;
+  content: "";
+  height: 6px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+  width: 25%;
+}
+
+.status__bar.completed:after {
+  width: 100%;
+}
+
+/**
+ * Buttons Styles
+ */
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 32px;
+  padding: 0 48px;
+}
+
+.btn-next {
+  background-color: #00c98a;
+  color: #ffffff;
+}
+
+@media (max-width: 575px) {
+  .btn {
+    width: 100%;
+  }
+}

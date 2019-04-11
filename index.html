@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/modules.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <title>Volders Challenge</title>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="content-wrapper flex-container">
+        <img src="images/volders-logo.svg" alt="Volders logo">
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="content-wrapper flex-container">
+        <section>
+          <div class="status flex-container grey-bg">
+            <div class="status__text">25%</div>
+            <div class="status__bar"></div>
+          </div>
+          <div class="step">
+            <div class="step__title">Let's start the process</div>
+            <form class="form">
+              <fieldset class="fieldset">
+                <legend class="fieldset__legend">Name</legend>
+                <div class="flex-container fl-wr jt-sb">
+                  <div class="input-wrapper col-12 col-lg-6 margin">
+                    <label class="input-label" for="first-name">First Name</label>
+                    <input id="first-name" class="input-field isRequired" type="text" name="first-name">
+                  </div>
+                  <div class="input-wrapper col-12 col-lg-6">
+                    <label class="input-label" for="last-name">Last Name</label>
+                    <input id="last-name" class="input-field isRequired" type="text" name="last-name">
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="fieldset">
+                <legend class="fieldset__legend">Address</legend>
+                <div class="flex-container fl-wr jt-sb">
+                  <div class="input-wrapper col-12 col-lg-8 margin">
+                    <label class="input-label" for="street-name">Street Name</label>
+                    <input id="street-name" class="input-field" type="text" name="street-name">
+                  </div>
+                  <div class="input-wrapper col-12 col-lg-4">
+                    <label class="input-label" for="number">Number</label>
+                    <input id="number" class="input-field" type="text" name="number">
+                  </div>
+                  <div class="input-wrapper col-12 col-lg-4 margin">
+                    <label class="input-label" for="zipcode">Zipcode</label>
+                    <input id="zipcode" class="input-field" type="text" name="zipcode">
+                  </div>
+                  <div class="input-wrapper col-12 col-lg-8">
+                    <label class="input-label" for="city">City</label>
+                    <input id="city" class="input-field" type="text" name="city">
+                  </div>
+                </div>
+              </fieldset>
+              <div class="button-wrapper flex-container grey-bg jt-fe">
+                <button class="btn btn-next">Next</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
